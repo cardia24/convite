@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#481322" />
+    <meta name="description" content="Um convite especial para Ludmila Pires." />
+    <title>Um convite para Ludmila</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&amp;family=Italiana&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <div class="heart-rain" id="heartRain" aria-hidden="true"></div>
+
+    <main class="hero">
+      <div class="rings" aria-hidden="true"></div>
+      <div class="glow glow-one" aria-hidden="true"></div>
+      <div class="glow glow-two" aria-hidden="true"></div>
+
+      <div class="botanical botanical-left" aria-hidden="true">
+        <svg viewBox="0 0 300 470">
+          <path class="stem" d="M-8 455C67 393 64 297 125 233c44-46 68-97 70-174" />
+          <path d="M62 363c-29 2-49-16-58-49 32-5 55 11 58 49Z" />
+          <path d="M83 314c-2-29 15-50 47-60 7 31-8 55-47 60Z" />
+          <path d="M113 252c-32-1-51-21-56-54 34-1 56 18 56 54Z" />
+          <path d="M145 202c1-28 20-46 50-51 1 31-17 51-50 51Z" />
+          <path d="M171 143c-27-7-42-29-39-59 30 6 46 26 39 59Z" />
+          <path d="M191 91c7-25 27-38 55-34-6 27-25 41-55 34Z" />
+        </svg>
+      </div>
+      <div class="botanical botanical-right" aria-hidden="true">
+        <svg viewBox="0 0 300 470">
+          <path class="stem" d="M-8 455C67 393 64 297 125 233c44-46 68-97 70-174" />
+          <path d="M62 363c-29 2-49-16-58-49 32-5 55 11 58 49Z" />
+          <path d="M83 314c-2-29 15-50 47-60 7 31-8 55-47 60Z" />
+          <path d="M113 252c-32-1-51-21-56-54 34-1 56 18 56 54Z" />
+          <path d="M145 202c1-28 20-46 50-51 1 31-17 51-50 51Z" />
+          <path d="M171 143c-27-7-42-29-39-59 30 6 46 26 39 59Z" />
+          <path d="M191 91c7-25 27-38 55-34-6 27-25 41-55 34Z" />
+        </svg>
+      </div>
+
+      <section class="content" aria-labelledby="invitee-name">
+        <p class="eyebrow reveal">Um convite especial para</p>
+        <h1 id="invitee-name" class="reveal delay-1">Ludmila <em>Pires</em></h1>
+
+        <div class="heart-line reveal delay-2" aria-hidden="true">
+          <span></span>
+          <svg viewBox="0 0 24 24"><path d="M12 20.4 3.7 12a5.5 5.5 0 0 1 7.8-7.8l.5.5.5-.5a5.5 5.5 0 0 1 7.8 7.8Z" /></svg>
+          <span></span>
+        </div>
+
+        <p class="intro reveal delay-3">Minha xubiruba, aceita jantar comigo?</p>
+
+        <article class="details-card reveal delay-4">
+          <div class="date-block">
+            <span class="label">Sábado</span>
+            <strong>26</strong>
+            <span class="label">Setembro · 2026</span>
+          </div>
+          <div class="divider" aria-hidden="true"></div>
+          <div class="place-block">
+            <div class="detail-row">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+              <div><span class="label">Horário</span><p>20h</p></div>
+            </div>
+            <div class="detail-row">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              <div><span class="label">Local</span><p>Fausto &amp; Manoel</p><small>Águas Claras · Brasília, DF</small></div>
+            </div>
+          </div>
+        </article>
+
+        <div class="actions reveal delay-5">
+          <button class="accept-button" id="acceptButton" type="button">
+            <span>Sim, eu aceito</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M14 7l5 5-5 5"/></svg>
+          </button>
+          <a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Fausto%20%26%20Manoel%20%C3%81guas%20Claras%2C%20Rua%2036%20Norte%2C%208%2C%20Bras%C3%ADlia%20DF%2C%2070297-400" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            Ver localização
+          </a>
+        </div>
+        <p class="closing reveal delay-5">Vou adorar ter você comigo.</p>
+      </section>
+    </main>
+
+    <dialog class="response-modal" id="responseModal">
+      <button class="close-button" id="closeButton" aria-label="Fechar" type="button"><span></span><span></span></button>
+      <div class="modal-heart" aria-hidden="true">♥</div>
+      <p class="modal-kicker">Então está combinado</p>
+      <h2>Temos um encontro!</h2>
+      <p>Ainda bem que aceitou,<br />estou morrendo de saudade!</p>
+    </dialog>
+    <div class="confetti" id="confetti" aria-hidden="true"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
